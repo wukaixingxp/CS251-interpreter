@@ -1,0 +1,5 @@
+(define fun 
+(lambda (x y) 
+   (if x y 10)))
+(fun 2 5)
+(morefun #f 5)

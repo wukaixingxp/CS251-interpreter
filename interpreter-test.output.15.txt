@@ -1,0 +1,6 @@
+#f
+#t
+#t
+#f
+"hello"
+"the else case works!"

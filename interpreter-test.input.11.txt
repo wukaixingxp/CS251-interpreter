@@ -1,0 +1,6 @@
+(define fun
+    (lambda (x)
+          (begin
+          (set! x (+ x 1))
+          (+ x x))))          
+(fun 5)

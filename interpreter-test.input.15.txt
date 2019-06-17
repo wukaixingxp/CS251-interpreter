@@ -1,0 +1,12 @@
+(and #t (null? (quote ())) #f "short circuit - never gets here")
+(and #t (< 3 5) (> 6 1))
+(or (= 3 5) (= 3 3) "never evals this")
+(or (= 12 15) (= 11 25))
+
+(cond ((null? (quote ())) "hello")
+      ("not looking here" "nor here")
+      (#t 3.5))
+      
+(cond ((> 3 5) "nope not here")
+      (#f "doesn't eval this")
+(else "the else case works!"))
